@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Google.Api.CommonProtos" Version="2.9.0" />
+        <PackageReference Include="Google.Protobuf" Version="3.22.1" />
+        <PackageReference Include="Grpc" Version="2.46.6" />
+        <PackageReference Include="Grpc.Net.Client" Version="2.52.0" />
+        <PackageReference Include="Grpc.Tools" Version="2.53.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="NAudio" Version="2.1.0" />
+        <PackageReference Include="JWT" Version="10.0.2" />
+        <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.27.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Protobuf GrpcServices="Client" Include="**/*.proto" />
+    </ItemGroup>
+
+</Project>

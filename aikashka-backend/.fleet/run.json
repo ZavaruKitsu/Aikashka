@@ -1,0 +1,38 @@
+{
+    "configurations": [
+        {
+            "type": "python",
+            "name": "Run backend (hot reload)",
+            "module": "jurigged",
+            "arguments": [
+                "--watch",
+                "main.py",
+                "-v",
+                "-m",
+                "flask",
+                "--app",
+                "main",
+                "run",
+                "--host",
+                "0.0.0.0"
+            ]
+        },
+        {
+            "type": "python",
+            "name": "Run backend (single thread)",
+            "module": "flask",
+            "arguments": [
+                "--app",
+                "main",
+                "run",
+                "--host",
+                "0.0.0.0"
+            ]
+        },
+        {
+            "type": "python",
+            "name": "Run backend",
+            "file": "run.py"
+        }
+    ]
+}

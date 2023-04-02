@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Discord.Net.WebSocket" Version="3.10.0" />
+        <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.28.0" />
+        <PackageReference Include="Serilog" Version="2.12.0" />
+        <PackageReference Include="Standard.AI.OpenAI" Version="0.3.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Tinkoff.VoiceKit\Tinkoff.VoiceKit.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include=".\Data\YourOwn\**">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Update="Data\Languages.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Languages.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Update="Data\Languages.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Languages.resx</DependentUpon>
+        </Compile>
+    </ItemGroup>
+
+</Project>

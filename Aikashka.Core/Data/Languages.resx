@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        id="root" xmlns="">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <data name="AikashkaName" xml:space="preserve">
+        <value>Kira</value>
+    </data>
+    <data name="AikashkaNames" xml:space="preserve">
+        <value>Kira; bot</value>
+    </data>
+    <data name="ShutUpWords" xml:space="preserve">
+        <value>shut; calm</value>
+    </data>
+    <data name="EmptyResponseText" xml:space="preserve">
+        <value>I have no words.</value>
+    </data>
+    <data name="PromptChannelMembers" xml:space="preserve">
+        <value>Current list of users in the channel:</value>
+    </data>
+    <data name="PromptLanguage" xml:space="preserve">
+        <value>Your response should be in English.</value>
+    </data>
+    <data name="PromptHistoryCleared" xml:space="preserve">
+        <value>History has been cleared.</value>
+    </data>
+    <data name="PromptUnableToHear" xml:space="preserve">
+        <value>*something strange* </value>
+    </data>
+</root>
