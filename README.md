@@ -26,10 +26,6 @@ I don't do pre-made binary. It means that you have to clone this repo, open it i
 
 TTS made using Tinkoff VoiceKit (well, it's really cheap and the voice is REALLY good).
 
-FFmpeg is not required, because NAudio is better and more stable.
-
-At the moment, I made it work for Russian language only.
-
 ### How To
 
 #### Required
@@ -42,11 +38,19 @@ Rename `name_mappings.example.txt` to `name_mappings.txt` and map all user profi
 
 Take a look at `systemMsg` in `Aikashka.Core/Generators/TextGenerator.cs` - first 3 lines. Change them if you want.
 
+#### Whisper backend (`aikashka-backend/`)
+
+Create virtual environment & install `requirements.txt`.
+
+If you want GPU acceleration, install PyTorch with CUDA, e.g. `pip install torch --index-url https://download.pytorch.org/whl/cu117`
+
+*And if you don't, then remove `, device=0` from core.py*
+
+Also ensure that model fits your needs.
+
 #### Run
 
 Compile & run bot.
-
-Run Whisper backend under `aikashka-backend/`.
 
 Invite bot to the server and use `/go` command to join the voice channel.
 
