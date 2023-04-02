@@ -36,6 +36,8 @@ At the moment, I made it work for Russian language only.
 
 Rename `appsettings.example.json` to `appsettings.json` and fill all required API keys.
 
+Rename `name_mappings.example.txt` to `name_mappings.txt` and map all user profiles that will talk with the bot.
+
 #### Lore
 
 Take a look at `systemMsg` in `Aikashka.Core/Generators/TextGenerator.cs` - first 3 lines. Change them if you want.
